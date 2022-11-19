@@ -214,7 +214,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            print ('you have entered No or unvalid input')
+            print ('you have entered No or invalid input')
             break
 
 
