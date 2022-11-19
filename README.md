@@ -7,7 +7,7 @@
 Bikeshare
 
 ### Description
-This project shows the data for different bike stations in 3 different cities in U.S.
+This project shows the data for different bike stations in 3 different cities (New York City, Chicago and Washington) in U.S.
 
 ### Files used
 washington.csv
