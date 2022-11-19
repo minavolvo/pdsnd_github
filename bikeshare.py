@@ -173,7 +173,7 @@ def user_stats(df, city):
 
 def raw_data(df):
     """
-    Request for seeing raw data. 5 rows each time
+    Request for seeing raw data. Possibility of showing 5 full rows each time.
     #x = pd.read_csv('./chicago.csv')
     #y = pd.read_csv('./new_york_city.csv')
     #z = pd.read_csv('./washington.csv')
