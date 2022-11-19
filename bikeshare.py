@@ -21,9 +21,10 @@ def get_filters():
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = str(input("Please enter the city of interest: Chicago, New York City, Washington: \n")).lower()
-    while (city.lower() != 'chicago') and (city.lower() != 'new york city') and (city.lower() != 'washington'):
+    while city not in CITY_DATA.keys():
         city = input("Please choose your city among Chicago, New York city or Washington: \n").lower()
-    print('\n You have chosen', city)
+        print('\n You have chosen', city)
+
     print('-' * 10)
 
     # get user input for month (all, january, february, ... , june)
@@ -173,7 +174,7 @@ def user_stats(df, city):
 
 def raw_data(df):
     """
-    Request for seeing raw data. 5 rows each time
+    Request for seeing raw data. Possibility of showing 5 full rows each time.
     #x = pd.read_csv('./chicago.csv')
     #y = pd.read_csv('./new_york_city.csv')
     #z = pd.read_csv('./washington.csv')
@@ -214,7 +215,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            print ('you have entered No or unvalid input')
+            print ('you have entered No or invalid input')
             break
 
 
